@@ -1,0 +1,196 @@
+/* ---------------------------------------------------
+   NAVBAR
+----------------------------------------------------- */
+
+#navprincipal {
+    background-color: #272b30;
+    padding-top: 5px;
+    padding-bottom: 5px;
+      
+  }
+
+  
+  #navprincipal .navbar-nav .nav-item .nav-link {
+    font-size: 90%;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+  }
+  
+  #navprincipal .navbar-nav .nav-item .nav-link.active, #navprincipal .navbar-nav .nav-item .nav-link:hover {
+    color:  rgb(74, 162, 250);
+  }
+    #navprincipal .navbar-nav .nav-item .nav-link {
+      padding: 13px;
+    }
+
+
+/* ---------------------------------------------------
+    SIDEBAR
+----------------------------------------------------- */
+#sidebar a, a:hover, a:focus {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 300px;
+    background: #0969D5;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    min-width: 100px;
+    max-width: 100px;
+    text-align: center;
+}
+
+#sidebar.active img {
+    
+        display: none;
+}
+#sidebar.active p {
+    
+        display: none;
+    }
+
+#sidebar.active ul li a {
+    font-size: 1.1em;
+}
+#sidebar.active ul li a label {
+    text-align: center;
+    font-size: 0em;
+}
+
+#sidebar.active ul li a i {
+    margin-right:  0;
+    display: block;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    background: rgb(74, 138, 206);
+}
+
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: #0969D5;
+    background: #fff;
+}
+#sidebar ul li a i {
+    margin-right: 10px;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: rgb(6, 88, 175);
+}
+
+
+/* ---------------------------------------------------
+    CONTENT
+----------------------------------------------------- */
+#content {
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+/* Alteração da cor e expessura da borda da classe table-bordered do bootstrap */
+
+table.table-bordered {
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+table.table-bordered>thead>tr>th {
+    border: 1px solid black;
+}
+
+table.table-bordered>tbody>tr>td {
+    border: 1px solid black;
+}
+
+
+
+
+  /* CSS do botão on/off */
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(20px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    vertical-align: top;
+}

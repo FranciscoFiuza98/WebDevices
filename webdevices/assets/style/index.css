@@ -1,0 +1,60 @@
+#navprincipal {
+    background-color: #272b30;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  
+  #navprincipal .navbar-nav .nav-item .nav-link {
+    font-size: 90%;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+  }
+  
+  #navprincipal .navbar-nav .nav-item .nav-link.active, #navprincipal .navbar-nav .nav-item .nav-link:hover {
+    color:  rgb(74, 162, 250);
+  }
+    #navprincipal .navbar-nav .nav-item .nav-link {
+      padding: 13px;
+    }
+  
+  .header {
+    text-align: center;
+    color: white;
+    background-image: url("../img/backgroundImg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  .header .texto .texto-cima {
+    font-size: 22px;
+    font-style: italic;
+    line-height: 22px;
+    margin-bottom: 25px;
+    font-family: sans-serif;
+  }
+    .header .texto {
+      padding-top: 300px;
+      padding-bottom: 200px;
+    }
+    .header .texto .texto-cima {
+      font-size: 40px;
+      font-style: italic;
+      line-height: 40px;
+      margin-bottom: 25px;
+      font-family:sans-serif;
+    }
+    .header .texto .texto-baixo {
+      font-size: 75px;
+      font-weight: 700;
+      line-height: 75px;
+      margin-bottom: 50px;
+      font-family: sans-serif;
+    }
+    .section-funcoes{
+        font-weight: 700;
+        font-family: sans-serif;
+    }

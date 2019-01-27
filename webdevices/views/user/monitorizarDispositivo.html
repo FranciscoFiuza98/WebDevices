@@ -1,0 +1,298 @@
+<!-- Conteúdo da página -->
+<div class="jumbotron" style="margin-top:2%; background-color:rgb(255, 255, 255)">
+
+    <!-- Título -->
+    <h4>
+        <i class="fa fa-cog" aria-hidden="true"></i> Monitorizar Dispositivo</h4>
+
+    <hr>
+
+    <div class="jumbotron">
+        <h5><i class="fa fa-exclamation"></i> Selecione um tipo de dispositivo</label>
+        </h5>
+        <!-- Tipos de Dispositivos -->
+        <div class="row" id="botoes">
+
+            <div class="col-3 ml-4"></div>
+
+            <!-- Sensor -->
+            <div class="col">
+                <h5>Sensor</h5>
+                <img class="border rounded p-1 mt-1" src="img/sensor.png" id="sensor" alt="Sensor" width="80" height="70">
+            </div>
+            <div class="col-1"></div>
+
+            <!-- Atuador -->
+            <div class="col">
+                <h5>Atuador</h5>
+                <img class="border rounded p-1 mt-1" src="img/atuador.png" alt="atuador" id="atuador" width="80" height="70">
+            </div>
+
+            <div class="col-1"></div>
+
+            <!-- Display -->
+            <div class="col">
+                <h5>Display</h5>
+                <img class="border rounded p-1 mt-1" src="img/display.png" alt="display" id="display" width="80" height="70">
+            </div>
+
+            <div class="col-3"></div>
+        </div>
+
+        <hr style="margin-top:2%">
+
+        <div class="row mt-5 d-none" id="tabela">
+            <div class="col-3"></div>
+
+            <div class="col-7" style="margin-right:10%">
+
+                <!-- Selects -->
+                <div class="form-group mt-5">
+
+                    <!-- Funcionalidade -->
+                    <label for="funcionalidade">Funcionalidade: </label>
+                    <select name="funcionalidade" id="funcionalidade">
+                            </select>
+
+                    <!-- Marca -->
+                    <label class="ml-2" for="marca">Marca: </label>
+                    <select name="marca" id="marca">
+                            </select>
+
+                    <!-- Modelo -->
+                    <label class="ml-2" for="modelo">Modelo: </label>
+                    <select name="modelo" id="modelo">
+                            </select>
+
+                    <button class="btn btn-primary " id="filtrar">Filtrar</button>
+
+                    <br>
+
+                    <input type="number" class="mt-3" placeholder="Número do Dispositivo" id="inputPesquisar">
+
+                    <button class="btn btn-primary ml-3" id="pesquisar">Pesquisar</button>
+
+                </div>
+
+                <!-- Tabela -->
+                <table class="table table-hover table-bordered text-center mt-4" style="width:90%">
+                    <thead class="bg-primary text-white">
+                        <tr>
+                            <th style="width:15%">Número</th>
+                            <th>Marca</th>
+                            <th>Modelo</th>
+                            <th style="width:20%">Funcionalidade</th>
+                            <th>Configurar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+
+
+
+
+        <div class="row d-none" id="monitorizaratuador" style="margin-top: 10%">
+            <div class="col-3"></div>
+            <div class="col-7">
+
+
+                <!-- Informação do Dispositivo -->
+
+                <!-- Número -->
+                <label style="margin-left: 17%">
+                            <b>Número:</b>
+                        </label>
+                <label class="numeroDispositivo"></label>
+
+                <!-- Marca -->
+                <label class="ml-5">
+                            <b>Marca:</b>
+                        </label>
+                <label class="marcaDispositivo"></label>
+
+                <!-- Modelo -->
+                <label class="ml-5">
+                            <b>Modelo:</b>
+                        </label>
+                <label class="modeloDispositivo"></label>
+
+                <br>
+
+
+                <!-- Definições do dispositivo -->
+
+                <!-- Ligado/Desligado -->
+                <label style="margin-top:5.2%" class="marginLeft17">Ligado:</label>
+                <label class="switch mt-5 ml-1">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+
+                <br>
+
+                <!-- Ar Frio -->
+                <label class="marginLeft17 mt-3">Manter temperatura entre: </label>
+                <input class="mt-3 ml-1" type="text" id="minTemp" style="width:3%; height:30px"> e <input class="mt-3 ml-1" type="text" id="minTemp" style="width:3%; height:30px"> ºC.
+
+
+            </div>
+            <div class="col"></div>
+
+
+            <button class="btn btn-block btn-info gravar"  style="width: 25%; margin-left: 40%; margin-top: 5%">Gravar</button>
+
+        </div>
+
+
+        <div class="row d-none" id="monitorizardisplay" style="margin-top: 10%">
+            <div class="col-3"></div>
+            <div class="col-7">
+
+
+
+                <!-- Informação do Dispositivo -->
+
+                <!-- Número -->
+                <label for="numeroDispositivo" style="margin-left: 17%">
+                            <b>Número:</b>
+                        </label>
+                <label class="numeroDispositivo"></label>
+
+                <!-- Marca -->
+                <label class="ml-5" for="marcaDispositivo">
+                            <b>Marca:</b>
+                        </label>
+                <label class="marcaDispositivo"></label>
+
+                <!-- Modelo -->
+                <label class="ml-5" for="modeloDispositivo">
+                            <b>Modelo:</b>
+                        </label>
+                <label class="modeloDispositivo"></label>
+
+                <br>
+
+
+                <!-- Definições do dispositivo -->
+
+                <!-- Ligado/Desligado -->
+                <label style="margin-top:5.2%; margin-left:17%">Ligado:</label>
+                <label class="switch mt-5 ml-1">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+
+                <!-- Selects -->
+                <div class="form-group mt-3">
+
+                    <!-- Funcionalidade -->
+                    <label style="margin-left: 17%" for="lblResolucao">Resolução: </label>
+                    <select style="margin-left:5px" name="lblResolucao" id="lblResolucao">
+                                <option value="1920x1024">1920 x 1024</option>
+                                <option value="1680x1050">1680 x 1050</option>
+                                <option value="1600x900">1600 x 900</option>
+                                <option value="1440x900">1440 x 900</option>
+                            </select>
+
+                    <br>
+
+                    <!-- Frequência -->
+                    <label style="margin-left:17%; margin-top:2%" for="lblFrequencia">Frequência: </label>
+                    <select style="margin-top:2%" name="lblFrequencia" id="lblFrequencia">
+                                <option value="144hz">144hz</option>
+                                <option value="120hz">120hz</option>
+                                <option value="60hz">60hz</option>
+                                <option value="30hz">30hz</option>
+                            </select>
+
+                    <br>
+
+                    <!--Brilho-->
+                    <div class="row mt-2" style="margin-left:17%">
+                        <label>Brilho: </label>
+
+                        <input type="range" min="0" max="100" value="50" id="sldBrilho" class="ml-3">
+
+                        <label class="ml-3">50</label>%
+                    </div>
+
+                </div>
+            </div>
+            <div class="col"></div>
+
+            <button class="btn btn-block btn-info gravar" style="width: 25%; margin-left: 40%; margin-top: 5%">Gravar</button>
+        </div>
+
+
+
+        <div class="row d-none" id="monitorizarsensor" style="margin-top: 10%">
+            <div class="col-3"></div>
+            <div class="col-7">
+
+
+                <!-- Informação do Dispositivo -->
+
+                <!-- Número -->
+                <label for="numeroDispositivo" style="margin-left: 17%">
+                            <b>Número:</b>
+                        </label>
+                <label class="numeroDispositivo"></label>
+
+                <!-- Marca -->
+                <label class="ml-5" for="marcaDispositivo">
+                            <b>Marca:</b>
+                        </label>
+                <label class="marcaDispositivo"></label>
+
+                <!-- Modelo -->
+                <label class="ml-5" for="modeloDispositivo">
+                            <b>Modelo:</b>
+                        </label>
+                <label class="modeloDispositivo"></label>
+
+                <br>
+
+
+                <!-- Definições do dispositivo -->
+
+                <!-- Ligado/Desligado -->
+                <label style="margin-top:5.2%; margin-left:17%">Ligado:</label>
+                <label class="switch mt-5 ml-1">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+
+                <br>
+
+                <!-- Intervalo de medições -->
+                <div class="row mt-2" style="margin-left:17%">
+                    <label>Intervalo de tempo entre as medições:</label>
+
+                    <input type="range" min="1" max="60" value="5" id="sldIntervalo" class="ml-3">
+
+                    <label class="ml-3">5</label> <label class="ml-1">min</label>
+                </div>
+
+            </div>
+            <div class="col"></div>
+
+            <button class="btn btn-block btn-info gravar" style="width: 25%; margin-left: 40%; margin-top: 5%">Gravar</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+</div>
+</div>

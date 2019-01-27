@@ -1,0 +1,199 @@
+<div class="jumbotron" style="margin-top:2%; background-color:rgb(255, 255, 255)">
+
+    <!-- Título -->
+    <h4>
+        <i class="fa fa-cog" aria-hidden="true"></i> Monitorizar Dispositivos</h4>
+
+    <hr>
+
+    <!-- Tipos de Dispositivos -->
+    <div class="row">
+
+        <div class="col-3 ml-4"></div>
+
+        <!-- Sensor -->
+        <div class="col">
+            <h5>Sensor</h5>
+            <input type="image" class="border rounded p-1 mt-1" borderColor="#A9A9A9" src="img/sensor.png" id="sensor" alt="Sensor" width="80" height="70" onclick="highlight()">
+        </div>
+        <div class="col-1"></div>
+
+        <!-- Atuador -->
+        <div class="col">
+            <h5>Atuador</h5>
+            <input type="image" class="border rounded p-1 mt-1" borderColor="#A9A9A9" src="img/atuador.png" alt="Atuador" id="atuador" width="80" height="70" onclick="highlight()">
+        </div>
+
+        <div class="col-1"></div>
+
+        <!-- Display -->
+        <div class="col">
+            <h5>Display</h5>
+            <input type="image" class="border rounded p-1 mt-1" borderColor="#A9A9A9" src="img/display.png" alt="Display" id="display" width="80" height="70" onclick="highlight()">
+        </div>
+
+        <div class="col-3"></div>
+    </div>
+
+    <hr style="margin-top:2%">
+
+    <div class="row mt-5">
+        <div class="col-2"></div>
+
+        <div class="col-9">
+
+            <!-- Selects -->
+            <div class="row">
+
+                <!-- Funcionalidade -->
+                <div class="col border-right" style="">
+
+                    <label for="lblFuncionalidade">Funcionalidade: </label>
+                    <select class="" name="lblFuncionalidade" id="lblFuncionalidade">
+                                        <option value="Funcionalidade 1">Funcionalidade 1</option>
+                                        <option value="Funcionalidade 2">Funcionalidade 2</option>
+                                        <option value="Funcionalidade 3">Funcionalidade 3</option>
+                                    </select>
+
+                </div>
+
+                <!-- Departamento / Setor -->
+                <div class="col-4 border-right" style="">
+
+                    <!-- Departamento -->
+                    <label for="lblDepartamento">Departamento: </label>
+                    <select name="lblDepartamento" id="lblDepartamento">
+                                        <option value="Departamento 1">Departamento 1</option>
+                                        <option value="Departamento 2">Departamento 2</option>
+                                        <option value="Departamento 3">Departamento 3</option>
+                                    </select>
+
+                    <br>
+
+                    <!-- Setor -->
+                    <label for="lblSetor">Setor: </label>
+                    <select style="margin-left:18.5%" name="lblSetor" id="lblSetor">
+                                        <option value="Setor 1">Setor 1</option>
+                                        <option value="Setor 2">Setor 2</option>
+                                        <option value="Setor 3">Setor 3</option>
+                                    </select>
+                </div>
+
+                <!-- Marca / Modelo -->
+                <div class="col-2" style="">
+
+                    <!-- Marca -->
+                    <label for="lblMarca">Marca: </label>
+                    <select style="margin-left:11px" name="lblMarca" id="lblMarca">
+                                        <option value="Marca 1">Marca 1</option>
+                                        <option value="Marca 2">Marca 2</option>
+                                        <option value="Marca 3">Marca 3</option>
+                                    </select>
+
+                    <br>
+
+                    <!-- Modelo -->
+                    <label for="lblModelo">Modelo: </label>
+                    <select name="lblModelo" id="lblModelo">
+                                        <option value="Modelo 1">Modelo 1</option>
+                                        <option value="Modelo 2">Modelo 2</option>
+                                        <option value="Modelo 3">Modelo 3</option>
+                                    </select>
+
+                </div>
+
+                <div class="col mr-4" style="">
+                    <button class="btn btn-warning ml-3 mb-1 mt-2" style=""><b>Filtrar</b></button>
+                </div>
+
+            </div>
+
+            <div class="row mt-5" style="">
+                <input type="text" class="mt-3 ml-3" placeholder="Número do Dispositivo">
+
+                <button class="btn btn-warning ml-3 mt-3" style="font-size: 90%"><b>Pesquisar</b></button>
+            </div>
+
+            <!-- Tabela -->
+            <table class="table table-hover table-bordered text-center mt-4" style="width:90%">
+                <thead class="bg-warning">
+                    <tr>
+                        <th style="width:15%">Número</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th style="width:20%">Funcionalidade</th>
+                        <th>Departamento</th>
+                        <th>Setor</th>
+                        <th>
+                            Configurar
+                        </th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0001</td>
+                        <td>Marca 1</td>
+                        <td>Modelo 1</td>
+                        <td>Funcionalidade 1</td>
+                        <td>Departamento 1</td>
+                        <td>Setor 1</td>
+                        <td>
+                            <a href="#"><i class="fa fa-cog"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0002</td>
+                                        <td>Marca 2</td>
+                                        <td>Modelo 2</td>
+                                        <td>Funcionalidade 2</td>
+                                        <td>Departamento 1</td>
+                                        <td>Setor 1</td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-cog"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0003</td>
+                                        <td>Marca 3</td>
+                                        <td>Modelo 3</td>
+                                        <td>Funcionalidade 3</td>
+                                        <td>Departamento 1</td>
+                                        <td>Setor 1</td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-cog"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0004</td>
+                                        <td>Marca 4</td>
+                                        <td>Modelo 4</td>
+                                        <td>Funcionalidade 4</td>
+                                        <td>Departamento 1</td>
+                                        <td>Setor 1</td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-cog"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0005</td>
+                                        <td>Marca 5</td>
+                                        <td>Modelo 5</td>
+                                        <td>Funcionalidade 5</td>
+                                        <td>Departamento 1</td>
+                                        <td>Setor 1</td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-cog"></i>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="col-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                

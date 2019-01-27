@@ -1,0 +1,86 @@
+<div class="jumbotron" style="margin-top:2%; background-color:rgb(255, 255, 255)">
+    <h4>
+        <i class="fa fa-edit" aria-hidden="true"></i> Editar Setor</h4>
+    <hr>
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-7">
+
+            <!--Tabela-->
+
+            <table class="ml-4 table table-bordered text-center table-hover mt-5" style="width:90%">
+                <thead class="bg-warning">
+                    <tr>
+                        <th>Número</th>
+                        <th>Nome</th>
+                        <th>Sigla</th>
+                        <th>Departamento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0001</td>
+                        <td>Setor 1</td>
+                        <td>SET1</td>
+                        <td>Departamento 1</td>
+                </tbody>
+            </table>
+
+            <!--Formulário-->
+            <form class="mt-5" action="/updateDepartamento" id="atualizarDepartamento" method="POST">
+
+                <!--Nome-->
+                <div class="form-group">
+                    <label style="color:black" for="nome" class="control-label">Novo Nome:</label>
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome">
+                    <div style="color:black; font-style: italic" class="help-block with-errors"></div>
+                </div>
+
+                <!--Confirmar Nome-->
+                <div class="form-group mt-4">
+                    <label style="color:black" for="confirmarNome" class="control-label">Confirmar Nome:</label>
+                    <input type="text" class="form-control" id="confirmarNome" name="confirmarNome" placeholder="Nome" data-match="#nome" data-match-error="Os nomes têm de ser iguais.">
+                    <div style="color:black; font-style: italic" class="help-block with-errors"></div>
+                </div>
+
+                <!--Sigla-->
+                <div class="form-group mt-4">
+                    <label style="color:black" for="sigla" class="control-label">Nova Sigla:</label>
+                    <input type="text" class="form-control" id="sigla" name="sigla" placeholder="Sigla">
+                    <div class="help-block with-errors" style="color:black; font-style:italic"></div>
+                </div>
+
+                <!--Confirmar Sigla-->
+                <div class="form-group mt-4">
+                    <label style="color:black" for="confirmarSigla" class="control-label">Confirmar Sigla:</label>
+                    <input type="text" class="form-control" id="confirmarSigla" name="confirmarSigla" placeholder="Sigla" data-match="#sigla" data-match-error="As siglas têm de ser iguais.">
+                    <div class="help-block with-errors" style="color:black; font-style:italic"></div>
+                </div>
+
+                <!--Departamento-->
+                <label class="mt-4" for="lblDepartamento">Departamento: </label>
+                <select style="margin-left:11px" name="lblDepartamento" id="lblDepartamento">
+                                        <option value="Departamento 1">Departamento 1</option>
+                                        <option value="Departamento 2">Departamento 2</option>
+                                        <option value="Departamento 3">Departamento 3</option>
+                                    </select>
+
+                <!--Botão Atualizar-->
+
+                <div class="form-group mt-5">
+                    <button id="btnRegistar" type="submit" class="btn btn-warning btn-block">Atualizar</button>
+                </div>
+
+                <!--Botão Voltar Atrás-->
+                <a class="btn btn-block mt-3 mb-4 btn-warning" href="/adminDepartamentos">Voltar atrás</a>
+            </form>
+
+
+        </div>
+        <div class="col-3"></div>
+    </div>
+
+</div>
+</div>
+</div>
+</div>

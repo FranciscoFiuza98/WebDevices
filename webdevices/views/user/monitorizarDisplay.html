@@ -1,0 +1,105 @@
+<!-- Conteúdo da página -->
+<div id="content" style="padding:2%">
+    <button type="button" id="sidebarCollapse" class="btn btn-primary navbar-btn">
+                <i class="fa fa-bars"></i>
+            </button>
+    <div class="jumbotron" style="margin-top:2%; background-color:rgb(255, 255, 255)">
+
+        <!-- Título -->
+        <h4>
+            <i class="fa fa-cog" aria-hidden="true"></i> Monitorizar Display</h4>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-7">
+
+
+                <!-- Imagem -->
+                <h5 style="margin-left:39.5%">Display</h5>
+                <img class="border rounded p-1 mb-5" borderColor="#009AF4" style="margin-left:40%" src="img/display.png" alt="Display" width="60" height="60">
+
+                <br>
+
+
+                <!-- Informação do Dispositivo -->
+
+                <!-- Número -->
+                <label for="numeroDispositivo" style="margin-left: 17%">
+                            <b>Número:</b>
+                        </label>
+                <label>0001</label>
+
+                <!-- Marca -->
+                <label class="ml-5" for="marcaDispositivo">
+                            <b>Marca:</b>
+                        </label>
+                <label>Marca 1</label>
+
+                <!-- Modelo -->
+                <label class="ml-5" for="modeloDispositivo">
+                            <b>Modelo:</b>
+                        </label>
+                <label>Modelo 1</label>
+
+                <br>
+
+
+                <!-- Definições do dispositivo -->
+
+                <!-- Ligado/Desligado -->
+                <label style="margin-top:5.2%; margin-left:17%">Ligado:</label>
+                <label class="switch mt-5 ml-1">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+
+                <!-- Selects -->
+                <div class="form-group mt-3">
+
+                    <!-- Funcionalidade -->
+                    <label style="margin-left: 17%" for="lblResolucao">Resolução: </label>
+                    <select style="margin-left:5px" name="lblResolucao" id="lblResolucao">
+                                <option value="1920x1024">1920 x 1024</option>
+                                <option value="1680x1050">1680 x 1050</option>
+                                <option value="1600x900">1600 x 900</option>
+                                <option value="1440x900">1440 x 900</option>
+                            </select>
+
+                    <br>
+
+                    <!-- Frequência -->
+                    <label style="margin-left:17%; margin-top:2%" for="lblFrequencia">Frequência: </label>
+                    <select style="margin-top:2%" name="lblFrequencia" id="lblFrequencia">
+                                <option value="144hz">144hz</option>
+                                <option value="120hz">120hz</option>
+                                <option value="60hz">60hz</option>
+                                <option value="30hz">30hz</option>
+                            </select>
+
+                    <br>
+
+                    <!--Brilho-->
+                    <div class="row mt-2" style="margin-left:17%">
+                        <label>Brilho: </label>
+
+                        <input type="range" min="0" max="100" value="50" id="sldBrilho" class="ml-3">
+
+                        <label class="ml-3">50</label>%
+                    </div>
+
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-3">
+                <button class="btn btn-block mt-5 btn-info">Gravar</button>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+</div>

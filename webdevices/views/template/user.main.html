@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>WebDevices</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- CSS import -->
+    <link rel="stylesheet" href="style/perfil.css">
+    <link rel="stylesheet" href="style/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/simbolo.ico" />
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body style="background-color:#009AF4">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg " id="navprincipal">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="inicio">
+                <img src="img/logo2teste.png" alt="WebDevices" style="width:30%; margin-bottom:1%">
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link">Bem vindo, <span id="utilizador"></span></a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- SideBar -->
+    <div class="wrapper">
+        <nav id="sidebar">
+            <ul class="list-unstyled components" style="margin-top:20%" id="sidebarMenu">
+                <li class="">
+                    <a href="/meuPerfil" id="perfil">
+                        <i class="fa fa-user"></i>
+                        <span>Meu Perfil</span>
+                    </a>
+                    <li>
+                        <a href="#meusDispositivos" class="collapse show" data-toggle="collapse" aria-expanded="false">
+                            <i class="fa fa-mobile" aria-hidden="true"></i>
+                            <span>Meus Dispositivos</span>
+                            <i style="margin-left:0%" class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="collapse list-unstyled" id="meusDispositivos">
+                            <li>
+                                <a href="/adicionarDispositivo" id="adicionarDispositivo">
+                                    <i class="fa fa-plus"></i>
+                                    <span>Adicionar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/consultarDispositivo" id="consultarDispositivo">
+                                    <i class="fa fa-search"></i>
+                                    <span>Consultar</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </li>
+                <li class="">
+                    <a href="/monitorizarDispositivo" id="monitorizarDispositivo">
+                        <i class="fa fa-cog"></i>
+                        <span>Monitorizar Dispositivos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="sair">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        <span>Sair</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Conteúdo da página -->
+        <div class="col-lg">
+            <div id="content" style="padding:2%">
+                <button type="button" id="sidebarCollapse" class="btn btn-primary navbar-btn">
+                <i class="fa fa-bars"></i>
+            </button>
+                <div class="col" id="conteudoPagina">
+
+                    {{{conteudo}}}
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer text-white" style="background-color:#555555">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 mt-5">
+                    <h2 class="mb-4">Contactos</h2>
+                    <i class="fa mr-2 text-secondary fa-envelope-o"></i>
+                    <a href="mailto:9160132@esmad.ipp.pt" class="text-white">9160132@esmad.ipp.pt</a>
+                    <br>
+                    <i class="fa mr-2 text-secondary fa-envelope-o"></i>
+                    <a href="mailto:9160083@esmad.ipp.pt" class="text-white">9160083@esmad.ipp.pt</a>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-4 mt-5">
+                    <h2 class="mb-4 ml-5">Escola</h2>
+                    <i class="fa mr-2 text-secondary fa-graduation-cap ml-5"></i>
+                    <a href="https://www.esmad.ipp.pt/" target="_blank" class="text-white">ESMAD</a>
+                    <br>
+                </div>
+                <div class="col-4 mt-5">
+                    <h2 class="mb-4 ml-5">Localização</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.365083451212!2d-8.74163288467379!3d41.366152179266095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd244419ac8a36b3%3A0x9219b42064878c38!2sEscola+Superior+de+Media+Artes+e+Design!5e0!3m2!1spt-PT!2spt!4v1526322653300"
+                        width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/sweetalert2@7.22.2/dist/sweetalert2.all.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.10.2/validator.min.js"></script>
+    <script type='text/javascript' src='/js/user/sidebar.js'></script>
+    <script type='text/javascript' src='/js/user/userMain.js'></script>
+    {{{scripts}}}
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!-- Conteúdo da página -->
+<div class="jumbotron rounded" id="consultarDispositivo" style="margin-top:2%; background-color:rgb(255, 255, 255)">
+
+    <!-- Título -->
+    <h4>
+        <i class="fa fa-search" aria-hidden="true"></i> Consultar Dispositivos</h4>
+
+    <hr>
+    <div class ="jumbotron">
+        <h5><i class="fa fa-exclamation"></i> Selecione um tipo de dispositivo</label></h5>
+        <!-- Tipos de Dispositivos -->
+        <div class="row" id="botoes">
+
+            <div class="col-3 ml-4"></div>
+
+            <!-- Sensor -->
+            <div class="col">
+                <h5>Sensor</h5>
+                <img class="border rounded p-1 mt-1" src="img/sensor.png" id="sensor" alt="Sensor" width="80" height="70">
+            </div>
+
+            <div class="col-1"></div>
+
+            <!-- Atuador -->
+            <div class="col">
+                <h5>Atuador</h5>
+                <img class="border rounded p-1 mt-1" src="img/atuador.png" alt="Atuador" id="atuador" width="80" height="70">
+            </div>
+
+            <div class="col-1"></div>
+
+            <!-- Display -->
+            <div class="col">
+                <h5>Display</h5>
+                <img class="border rounded p-1 mt-1" src="img/display.png" alt="Display" id="display" width="80" height="70">
+            </div>
+
+            <div class="col-3"></div>
+        </div>
+
+        <hr style="margin-top:5%">
+
+        <!-- Tabela -->
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-7">
+                <table class="table table-bordered text-center table-hover mt-5 d-none" id="dispositivos" style="width:90%">
+                    <thead class="bg-primary">
+                        <tr>
+                            <th style="width:15%">Número</th>
+                            <th>Marca</th>
+                            <th>Modelo</th>
+                            <th style="width:20%">Funcionalidade</th>
+                            <th>Consultar</th>
+                            <th>Remover</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-3"></div>
+        </div>
+
+
+
+        <!--CONSULTA-->
+
+
+        <div class="row d-none" id="consulta">
+            <div class="col-3"></div>
+            <div class="col-7">
+
+                <!-- Informação do Dispositivo -->
+
+                <!-- Número -->
+                <label for="numeroDispositivo" id="numero" style="margin-left: 13%">
+                            <b>Número:</b>
+                        </label>
+
+                <!-- Marca -->
+                <label class="ml-5" for="marcaDispositivo" id="marca">
+                            <b>Marca:</b>
+                        </label>
+
+                <!-- Modelo -->
+                <label class="ml-5" for="modelo" id="modelo">
+                            <b>Modelo:</b>
+                        </label>
+
+
+                <!-- Tabela -->
+
+                <table class="table table-bordered text-center table-hover mt-5" id="medicoes" style="width:60%; margin-left:15%">
+                    <thead class="bg-primary">
+                        <tr>
+                            <th>Medição</th>
+                            <th>Data da Medição</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col"></div>
+        </div>
+        </div>
+</div>

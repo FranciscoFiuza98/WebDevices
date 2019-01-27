@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Editar Perfil</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- CSS import -->
+    <link rel="stylesheet" href="style/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/simbolo.ico" />
+</head>
+
+
+<body style="background-color:#fca9a9">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg " id="navprincipal">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="meuPerfil">
+
+                <img src="img/logo2teste.png" alt="WebDevices" style="width:30%; margin-bottom:1%">
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item" style="color:white; padding-right:5%;padding-top:4%">
+                        5
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn" href="#">
+                            <i style="color:red; padding-right:20px" class="fa fa-bell"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <img src="img/simboloPequeno.png" style="width:50%; padding-top:4%" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SideBar -->
+    <div class="wrapper">
+        <nav id="sidebar">
+            <img src="img/imagemPerfil.png" style="margin-left:28%; margin-top:10%" alt="">
+            <p class="text-center" style="margin-top:5%">Admin</p>
+            <ul class="list-unstyled components" style="margin-top:10%">
+                <li class="active">
+                    <a href="#perfis" data-toggle="collapse" aria-expanded="false">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <label>Perfis</label>
+                            <i style="margin-left:0%" class="fa fa-angle-down"></i>
+                        </a>
+                    <ul class="collapse list-unstyled" id="perfis">
+                        <li>
+                            <a href="adminPendente">
+                                    <i class="fa fa-clock-o"></i>
+                                    <label>Pendentes</label>
+                                </a>
+                        </li>
+                        <li class="active">
+                            <a href="adminLista">
+                                    <i class="fa fa-list"></i>
+                                    <label>Utilizadores</label>
+                                </a>
+                        </li>
+                        <li class="">
+                            <a href="adminDepartamentos">
+                                    <i class="fa fa-building"></i>
+                                    <label>Departamentos</label>
+                                </a>
+                        </li>
+
+                        <li class="">
+                            <a href="adminSetores">
+                                    <i class="fa fa-plus-square"></i>
+                                    <label>Setores</label>
+                                </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#meusDispositivos" data-toggle="collapse" aria-expanded="false">
+                            <i class="fa fa-mobile" aria-hidden="true"></i>
+                            <label>Dispositivos</label>
+                            <i style="margin-left:0%" class="fa fa-angle-down"></i>
+                        </a>
+                    <ul class="collapse list-unstyled" id="meusDispositivos">
+                        <li>
+                            <a href="adminAdicionarDispositivo">
+                                    <i class="fa fa-plus"></i>
+                                    <label>Adicionar</label>
+                                </a>
+                        </li>
+                        <li>
+                            <a href="adminConsultarDispositivo">
+                                    <i class="fa fa-search"></i>
+                                    <label> Consultar</label>
+                                </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="adminMonitorizarDispositivo">
+                        <i class="fa fa-cog"></i>
+                        <label>Monitorizar Dispositivos</label>
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        <label>Sair</label>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Conteúdo da página -->
+        <div class="col-lg">
+            <div id="content" style="padding:2%">
+                <button type="button" id="sidebarCollapse" class="btn btn-warning navbar-btn">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="jumbotron" style="margin-top:2%; background-color:rgb(255, 255, 255)">
+                    <h4>
+                        <i class="fa fa-edit" aria-hidden="true"></i> Editar Perfil</h4>
+                    <hr>
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-7">
+                            <table class="table table-bordered text-center table-hover mt-5" style="width:90%">
+                                <thead class="bg-warning">
+                                    <tr>
+                                        <th>Nome Completo</th>
+                                        <th>Contacto</th>
+                                        <th>Email</th>
+                                        <th>Departamento</th>
+                                        <th>Setor</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Andre Silva</td>
+                                        <td>912345678</td>
+                                        <td>andre.silva@email.com</td>
+                                        <td>Departamento 1</td>
+                                        <td>Setor 1</td>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-3"></div>
+                    </div>
+                    <hr>
+                    <!-- Formulário -->
+                    <div class="row mt-5">
+                        <div class="col-4 ml-4"></div>
+
+                        <div class="col">
+                            <form action="#">
+
+                                <!-- Nome Completo -->
+                                <div class="form-group">
+                                    <label for="nomeCompleto">Nome Completo:</label>
+                                    <input type="text" class="form-control" id="nomeCompleto" placeholder="Nome Completo">
+                                </div>
+
+                                <!-- Contacto -->
+                                <div class="form-group">
+                                    <label for="contacto">Contacto:</label>
+                                    <input type="text" class="form-control" id="contacto" placeholder="Contacto">
+                                </div>
+
+                                <!-- Email -->
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="text" class="form-control" id="email" placeholder="Email">
+                                </div>
+                                
+                                <!-- Departamento -->
+                                <div class="form-group">
+                                    <label for="departamento">Departamento:</label>
+                                    <select class="form-control" name="departamento" id="departamento">
+                                    <option value="departamento1">Departamento 1</option>
+                                    <option value="departamento2">Departamento 2</option>
+                                    <option value="departamento3">Departamento 3</option>
+                                    <option value="departamento4">Departamento 4</option>
+                                    <option value="departamento5">Departamento 5</option>
+                                    </select>
+                                </div>
+
+                                <!-- Setor -->
+                                <div class="form-group">
+                                    <label for="setor">Setor:</label>
+                                    <select class="form-control" name="setor" id="setor">
+                                    <option value="setor1">Setor 1</option>
+                                    <option value="setor2">Setor 2</option>
+                                    <option value="setor3">Setor 3</option>
+                                    <option value="setor4">Setor 4</option>
+                                    <option value="setor5">Setor 5</option>
+                                    </select>
+                                </div>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-2" style="margin-left:15px">
+                            <a class="btn btn-block mt-5 mb-4 btn-warning" href="#">Atualizar Utilizador</a>
+                        </div>
+                        <div class="col-2"><a class="btn btn-block mt-5 mb-4 btn-warning" href="#">Remover Utilizador</a></div>
+                        <div class="col-2"><a class="btn btn-block mt-5 mb-4 btn-warning" href="adminConsultarDispositivo">Voltar Atrás</a></div>
+                        <div class="col-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer text-white" style="background-color:#555555">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 mt-5">
+                    <h2 class="mb-4">Contactos</h2>
+                    <i class="fa mr-2 text-secondary fa-envelope-o"></i>
+                    <a href="mailto:9160132@esmad.ipp.pt" class="text-white">9160132@esmad.ipp.pt</a>
+                    <br>
+                    <i class="fa mr-2 text-secondary fa-envelope-o"></i>
+                    <a href="mailto:9160083@esmad.ipp.pt" class="text-white">9160083@esmad.ipp.pt</a>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-4 mt-5">
+                    <h2 class="mb-4 ml-5">Escola</h2>
+                    <i class="fa mr-2 text-secondary fa-graduation-cap ml-5"></i>
+                    <a href="https://www.esmad.ipp.pt/" target="_blank" class="text-white">ESMAD</a>
+                    <br>
+                </div>
+                <div class="col-4 mt-5">
+                    <h2 class="mb-4 ml-5">Localização</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.365083451212!2d-8.74163288467379!3d41.366152179266095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd244419ac8a36b3%3A0x9219b42064878c38!2sEscola+Superior+de+Media+Artes+e+Design!5e0!3m2!1spt-PT!2spt!4v1526322653300"
+                        width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

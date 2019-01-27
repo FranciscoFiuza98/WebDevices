@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Registo</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../img/simbolo.ico" />
+</head>
+
+<body style="background-color:#009AF4">
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <img class="center" src="img/logoBranco.png" style="width:100%" class="img-responsive" alt="Logo">
+            </div>
+            <div class="col">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <div class="card" style="background-color:#0172D3">
+                    
+                    <!--Título-->
+                    <h4 style="text-align:center; color:white; padding-top:5%">Registo</h1>
+                        <br>
+                        <div class="row">
+                            <div class="col-3">
+                            </div>
+                            <div class="col-6" style="text-align:center">
+                                <img src="img/adicionarImagem.png" alt="">
+                            </div>
+                            <div class="col-3">
+                            </div>
+                        </div>
+                        <div style="padding-top:5%" class="row">
+                            <div class="col-1"></div>
+                            <div class="col-10">
+                                
+                                <!--Formulário-->
+                                <form action="/save" id="registoUtilizador" method="POST">
+                                    
+                                    <!--Email-->
+                                    <div class="form-group">
+                                    <label style="color:white" for="email" class="control-label">Email:</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" data-error="O email introduzido não é válido" required value="rumoAo20@hotmail.com">
+                                    <div style="color:white; font-style: italic" class="help-block with-errors"></div>
+                                </div>
+                                    
+                                    <!--Nome-->
+                                <div class="form-group">
+                                    <label style="color:white" for="nomeCompleto" class="control-label">Nome Completo:</label>
+                                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome Completo" data-error="Campo obrigatório!"required value="Joseph in the Streets">
+                                    <div class="help-block with-errors" style="color:white; font-style:italic"></div>
+                                </div>
+                                
+                                    <!--Contacto-->
+                                <div class="form-group">
+                                    <label style="color:white" for="contacto" class="control-label">Contacto:</label>
+                                    <input type="text" class="form-control" id="contacto" placeholder="Contacto" name="contacto" data-minlength="9" data-maxlength="9" data-error="O contacto tem de conter 9 algarismos." required value="123456789">
+                                    <div class="help-block with-errors" style="color:white; font-style: italic"></div>
+                                </div>
+                                
+                                    <!--Palavra-Passe-->
+                                <div class="form-group">
+                                    <label style="color:white" for="password" class="control-label">Palavra-Passe:</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Palavra-Passe" name="password" data-minlength="6" data-error="A palavra-passe tem de conter no minimo 6 caracteres." required value="123456">
+                                    <div class="help-block with-errors" style="color:white; font-style:italic"></div>
+                                </div>
+                                
+                                    <!--Confirmar Palavra-Passe-->
+                                <div class="form-group">
+                                    <label style="color:white" for="confirmarPassword" class="control-label">Confirmar Palavra-Passe:</label>
+                                    <input type="password" class="form-control" id="confirmarPassword" placeholder="Confirmar Palavra-Passe" name="confirmarPassword" data-match="#password" data-error="Campo obrigatório!" data-match-error="As palavras-passe têm de ser iguais." required value="123456">
+                                    <div class="help-block with-errors" style="color: white; font-style: italic"></div>
+                                </div>
+                               
+                                      <!--Botão Registar-->
+                                
+                                <div class="form-group">
+                                    <button id="btnRegistar" type="submit" class="btn btn-info btn-block">Registar</button>
+                                </div>
+                                
+                                    <!--Botão Voltar Atrás-->
+                                <a class="btn btn-block mt-3 mb-4 btn-info" href="/">Voltar ao Início</a>
+                                </form>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3">
+        </div>
+    </div>
+    <br><br>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.10.2/validator.min.js"></script>
+    <script type="text/javascript" src="./controller/user.controller.js"></script>
+    <script type="text/javascript" src="./controller/email.controller.js"></script>
+
+</body>
+
+</html>

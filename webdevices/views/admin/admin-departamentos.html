@@ -1,0 +1,128 @@
+<div class="jumbotron" style="margin-top:2%; background-color:rgb(255, 255, 255)">
+    <h4>
+        <i class="fa fa-building" aria-hidden="true"></i> Departamentos</h4>
+    <hr>
+    <div id="tabela" class="row">
+        <div class="col"></div>
+        <div class="col-7">
+
+            <label style="margin-left:17%" for=""><b>Nome/Sigla/Número: </b></label>
+
+            <input type="text" class="mt-3 ml-2" id="inputPesquisar" placeholder="Nome/Sigla/Número">
+
+            <button class="btn btn-warning ml-3 mb-1" id="pesquisar" style="font-size: 90%"><b>Pesquisar</b></button>
+
+            <table class="table table-bordered text-center table-hover mt-5" style="width:90%; margin: auto;" id="tblDepartamento">
+                <thead class="bg-warning">
+                    <tr>
+                        <th>Número</th>
+                        <th>Nome</th>
+                        <th>Sigla</th>
+                        <th>Editar</th>
+                        <th>Apagar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
+            <div class="col-4 mt-5" style="margin-left:27%">
+                <a class="btn btn-block btn-warning" href="#" id="btnAdicionarDepartamento"><b>Adicionar Novo Departamento</b></a>
+            </div>
+
+
+        </div>
+        <div class="col"></div>
+    </div>
+
+
+<!--NOVO DEPARTAMENTO-->
+
+
+
+    <div class="row d-none" style="margin-top: 13%" id="novoDepartamento">
+        <div class="col-4"></div>
+        <div class="col-4">
+
+            <!--Formulário-->
+            <form action="/saveDepartamento" id="registoDepartamento" method="POST">
+
+                <!--Nome-->
+                <div class="form-group">
+                    <label style="color:black" for="nome" class="control-label">Nome:</label>
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" data-error="Campo obrigatório!" required>
+                    <div style="color:black; font-style: italic" class="help-block with-errors"></div>
+                </div>
+
+                <!--Sigla-->
+                <div class="form-group">
+                    <label style="color:black" for="sigla" class="control-label">Sigla:</label>
+                    <input type="text" class="form-control" id="sigla" name="sigla" placeholder="Sigla" data-error="Campo obrigatório!" required>
+                    <div class="help-block with-errors" style="color:black; font-style:italic"></div>
+                </div>
+                
+                
+
+                <!--Botão Registar-->
+
+                <div class="form-group mt-5">
+                    <button id="adicionar" type="submit" class="btn btn-warning btn-block">Adicionar</button>
+                </div>
+            </form>
+
+        </div>
+        <div class="col"></div>
+    </div>
+    
+    <!--EDITAR DEPARTAMENTO-->
+    
+        <div class="row d-none" id="editarDepartamento" style="margin-top: 10%; margin-left: 10%">
+        <div class="col-3"></div>
+        <div class="col-5">
+            
+            <!--Tabela-->
+            
+            <table class="table table-bordered text-center table-hover mt-5" id="tblEditar">
+                <thead class="bg-warning">
+                    <tr>
+                        <th>Número</th>
+                        <th>Nome</th>
+                        <th>Sigla</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
+            <!--Formulário-->
+            <form class="mt-5" action="/updateDepartamento" id="atualizarDepartamento" method="POST">
+
+                <!--Nome-->
+                <div class="form-group">
+                    <label style="color:black" for="editarNome" class="control-label">Novo Nome:</label>
+                    <input type="text" class="form-control" id="editarNome" name="editarNome" placeholder="Nome">
+                    <div style="color:black; font-style: italic" class="help-block with-errors"></div>
+                </div>
+
+                <!--Sigla-->
+                <div class="form-group mt-4">
+                    <label style="color:black" for="editarSigla" class="control-label">Nova Sigla:</label>
+                    <input type="text" class="form-control" id="editarSigla" name="editarSigla" placeholder="Sigla">
+                    <div class="help-block with-errors" style="color:black; font-style:italic"></div>
+                </div>
+
+                <!--Botão Atualizar-->
+
+                <div class="form-group mt-5">
+                    <button id="btnEditar" type="submit" class="btn btn-warning btn-block"><b>Atualizar</b></button>
+                </div>
+
+                <!--Botão Cancelar-->
+                <a class="btn btn-block mt-3 mb-4 btn-warning" href="#" id="editarCancelar"><b>Cancelar</b></a>
+            </form>
+
+
+        </div>
+        <div class="col"></div>
+    </div>
+</div>

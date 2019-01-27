@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/simbolo.ico" />
+</head>
+
+<body style="background-color: #009AF4">
+
+    <div class="text-center">
+        <img src="img/logoBranco.png" class="mt-5" alt="Logo" style="width: 400px; height: 300px; text-align:center">
+    </div>
+
+    <div class="card" style="background-color:#0172D3; margin-right: 35%; margin-left: 35%; margin-bottom: 8%">
+        <div class="card-body">
+            <h1 class="card-title" style="color:white; text-align:center">Iniciar Sessão</h1>
+            <br>
+
+            <form action="#" id="formLogin">
+
+                <!--Email-->
+                <div class="form-group">
+                    <label style="color:white" for="email" class="control-label">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" data-error="O email introduzido não é válido" required>
+                    <div style="color:white; font-style: italic" class="help-block with-errors"></div>
+                </div>
+
+                <!--Palavra-Passe-->
+                <div class="form-group">
+                    <label style="color:white" for="password" class="control-label">Palavra-Passe:</label>
+                    <input type="password" class="form-control" id="password" placeholder="Palavra-Passe" name="password" data-minlength="6" data-maxlength="20" data-error="Campo obrigatório"
+                        required>
+                    <div class="help-block with-errors" style="color:white; font-style:italic"></div>
+                </div>
+
+                <div class="form-group">
+                    <button id="btnRegistar" type="submit" class="btn btn-info btn-block">Entrar</button>
+                </div>
+                <!--<p style="margin-left:19%; margin-top:4%; color:white">Esqueceste-te da tua palavra-passe? Clica <a href="registo" style="color:white">aqui</a>.</p>-->
+                <p style="margin-left:25%; margin-top:4%; color:white">Ainda não tens conta? <a href="registo" style="color:white"><u>Regista-te aqui</u></a>.</p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.10.2/validator.min.js"></script>
+    <script type="text/javascript" src="/js/user/login.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/sweetalert2@7.22.2/dist/sweetalert2.all.js"></script>
+</body>
+
+</html>

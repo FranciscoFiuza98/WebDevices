@@ -1,0 +1,73 @@
+<div class="jumbotron" style="margin-top:2%; background-color:rgb(255, 255, 255)">
+
+    <!-- Título -->
+    <h4>
+        <i class="fa fa-plus" aria-hidden="true"></i> Adicionar Dispositivo</h4>
+    <hr>
+
+    <!-- Tipos de Dispositivos -->
+    <div class="row" id ="botoes">
+
+        <div class="col-3 ml-4"></div>
+
+        <!-- Sensor -->
+        <div class="col">
+            <h5>Sensor</h5>
+            <img class="border rounded p-1 mt-1" src="img/sensor.png" id="sensor" alt="Sensor" width="80" height="70">
+        </div>
+        <div class="col-1"></div>
+
+        <!-- Atuador -->
+        <div class="col">
+            <h5>Atuador</h5>
+            <img class="border rounded p-1 mt-1" src="img/atuador.png" alt="atuador" id="atuador" width="80" height="70">
+        </div>
+
+        <div class="col-1"></div>
+
+        <!-- Display -->
+        <div class="col">
+            <h5>Display</h5>
+            <img class="border rounded p-1 mt-1" src="img/display.png" alt="display" id="display" width="80" height="70">
+        </div>
+
+        <div class="col-3"></div>
+    </div>
+
+    <hr style="margin-top:2%">
+
+    <!-- Formulário -->
+    <div class="row mt-5 d-none" id ="formulario">
+        <div class="col-4 ml-4"></div>
+
+        <div class="col">
+            <form action="#">
+                
+                <!-- Marca -->
+                <div class="form-group">
+                    <label for="numeroDispositivo">Marca:</label>
+                    <input type="text" class="form-control" id="marcaDispositivo" placeholder="Marca do dispositivo">
+                </div>
+
+                <!-- Modelo -->
+                <div class="form-group">
+                    <label for="numeroDispositivo">Modelo:</label>
+                    <input type="text" class="form-control" id="modeloDispositivo" placeholder="Modelo do dispositivo">
+                </div>
+
+                <!-- Funcionalidade -->
+                <div class="form-group">
+                    <label for="funcionalidadeDispositivo">Funcionalidade:</label>
+                    <select class="form-control" name="funcionalidade" id="funcionalidade">
+                                    <option>Funcionalidade</option>
+                                </select>
+                </div>
+
+                <!-- Botão -->
+                <button type="submit" class="btn btn-block mt-5 mb-2 btn-warning">Adicionar</button>
+            </form>
+        </div>
+
+        <div class="col"></div>
+    </div>
+</div>

@@ -1,0 +1,119 @@
+<div class="jumbotron" style="margin-top:2%; background-color:rgb(255, 255, 255)">
+    <h4>
+        <i class="fa fa-list" aria-hidden="true"></i> Utilizadores</h4>
+    <hr>
+    
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <table class="table table-bordered text-center table-hover mt-5 d-none" style="width:90%;margin: auto;" id="tblUtilizadores">
+                <thead class="bg-warning">
+                    <tr>
+                        <th style="width: 50%">Nome Completo</th>
+                        <th>Contacto</th>
+                        <th>Email</th>
+                        <th>Departamento</th>
+                        <th style="width: 50%">Setor</th>
+                        <th>Editar</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div id="result"></div>
+        <div class="col-2"></div>
+    </div>
+    
+    <!--EDITAR UTILIZADOR-->
+
+
+
+
+    <div class="row d-none" id="editarUtilizador" style="margin-top: 20%; ">
+        <div class="col"></div>
+        <div class="col-5">
+            
+            <!--Tabela-->
+            
+            <table class="table table-bordered text-center table-hover mt-5" id="tblEditar">
+                <thead class="bg-warning">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Contacto</th>
+                        <th>Email</th>
+                        <th>Departamento</th>
+                        <th>Setor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
+            <!--Formulário-->
+            <form class="mt-5" action="/updateUtilizador" id="atualizarUtilizador" method="POST">
+
+                <!--Nome-->
+                <div class="form-group">
+                    <label style="color:black" for="editarNome" class="control-label">Novo Nome:</label>
+                    <input type="text" class="form-control" id="editarNome" name="editarNome" placeholder="Nome">
+                    <div style="color:black; font-style: italic" class="help-block with-errors"></div>
+                </div>
+
+                <!--Contacto-->
+                <div class="form-group mt-4">
+                    <label style="color:black" for="editarContacto" class="control-label">Novo Contacto:</label>
+                    <input type="number" class="form-control" id="editarContacto" name="editarContacto" placeholder="Contacto">
+                    <div class="help-block with-errors" style="color:black; font-style:italic"></div>
+                </div>
+                
+                <!--Email-->
+                <div class="form-group mt-4">
+                    <label style="color:black" for="editarEmail" class="control-label">Novo Email:</label>
+                    <input type="email" class="form-control" id="editarEmail" name="editarEmail" placeholder="Email">
+                    <div class="help-block with-errors" style="color:black; font-style:italic"></div>
+                </div>
+
+                <!-- Departamento -->
+                <div class="form-group">
+                    <label for="editarDepartamento">Departamento:</label>
+                    <select class="departamento form-control" name="editarDepartamento" id="editarDepartamento">
+                                    <option>Departamento</option>
+                                </select>
+                </div>
+                
+                 <!-- Setor -->
+                <div class="form-group">
+                    <label for="editarSetor">Setor:</label>
+                    <select class="form-control" name="editarSetor" id="editarSetor">
+                                    <option>Setor</option>
+                                </select>
+                </div>
+                
+                 <!-- Tipo Utilizador -->
+                <div class="form-group">
+                    <label for="tipoUtilizador">Tipo Utilizador:</label>
+                    <select class="form-control" name="tipoUtilizador" id="tipoUtilizador">
+                                    <option>Tipo Utilizador</option>
+                                    <option>Normal</option>
+                                    <option>Administrador</option>
+                                </select>
+                </div>
+
+                <!--Botão Atualizar-->
+
+                <div class="form-group mt-5">
+                    <button id="btnEditar" type="submit" class="btn btn-warning btn-block"><b>Atualizar</b></button>
+                </div>
+
+                <!--Botão Cancelar-->
+                <a class="btn btn-block mt-3 mb-4 btn-warning" href="#" id="editarCancelar"><b>Cancelar</b></a>
+            </form>
+
+
+        </div>
+        <div class="col"></div>
+    </div>
+    
+</div>

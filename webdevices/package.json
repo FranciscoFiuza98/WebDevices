@@ -1,0 +1,26 @@
+{
+  "name": "webdevices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^2.0.1",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.2.0",
+    "jsonwebtoken": "^8.3.0",
+    "mustache-express": "^1.2.6",
+    "mysql": "^2.15.0",
+    "nodemon": "^1.17.4",
+    "sweetalert2": "^7.22.0"
+  }
+}

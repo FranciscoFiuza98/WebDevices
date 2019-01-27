@@ -1,0 +1,45 @@
+<!-- Conteúdo da página -->
+<div class="jumbotron rounded" style="margin-top:2%; background-color:rgb(255, 255, 255)">
+    <h4>
+        <i class="fa fa-edit" aria-hidden="true"></i> Editar Perfil</h4>
+    <hr>
+    <div class="jumbotron">
+        <form action="/atualizarUtilizador" id="atualizarUtilizador" method="POST">
+            <!--<img style="display:block; margin-left:auto; margin-right:auto; margin-bottom:5%" src="img/adicionarImagem.png" alt="">-->
+            <div class="form-group">
+                <div style="color:#009AF4; margin-bottom:5px" id="nomeCompletoAtual"><span style="color:black">Nome Completo Atual: </span></div>
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome Completo" data-error="Campo obrigatório!">
+                <div class="help-block with-errors" style="color:black; font-style:italic"></div>
+
+            </div>
+            <div class="form-group">
+                <div style="color:#009AF4; margin-bottom:5px" id="contactoAtual"><span style="color:black;">Contacto Atual: </span></div>
+                <input type="number" class="form-control" id="contacto" placeholder="Contacto" name="contacto" data-length="9" data-error="O contacto tem de conter 9 algarismos.">
+                <div class="help-block with-errors" style="color:black; font-style: italic"></div>
+            </div>
+            <div>
+                <label style="color:black; margin-bottom:15px">Alterar a sua palavra-passe</label>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="password" placeholder="Palavra-Passe" name="password">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="confirmarPassword" placeholder="Confirmar Palavra-Passe" name="confirmarPassword">
+                </div>
+            </div>
+            <label style="color:black; margin-bottom:5px">Departamento Atual</label>
+            <div style="color:#009AF4" id="departamentoAtual"></div>
+            <label style="color:black; margin-top:15px; margin-bottom:15px">Setor Atual</label>
+            <div style="color:#009AF4" id="setorAtual"></div>
+
+            <div class="row">
+                <div class="col-5"></div>
+                <div class="col-2 ml-3 mt-4">
+                    <div class="form-group">
+                        <button id="btnAtualizar" type="submit" class="btn btn-primary btn-block" style="text-align:center; margin: auto;">Atualizar</button>
+                    </div>
+                </div>
+                <div class="col-5"></div>
+        </form>
+        </div>
+    </div>
+</div>
